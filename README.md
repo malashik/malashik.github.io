@@ -1,1 +1,1 @@
-Первые опыт с github pages
+Первые опыты с github pages
