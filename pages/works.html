@@ -10,12 +10,16 @@
   <body>
     <div class="sections">
       <div class="section-head">
-        <ul class="socials head-socials">
-          <li class="socials__item"><a class="social-link vk" href="#">вк</a></li>
-          <li class="socials__item"><a class="social-link github" href="#">гит</a></li>
-          <li class="socials__item"><a class="social-link in" href="#">инст</a></li>
-        </ul>
-        <div class="hamburger"></div>
+        <div class="section-head__row">
+          <ul class="socials head-socials">
+            <li class="socials__item"><a class="social-link vk" href="#"></a></li>
+            <li class="socials__item"><a class="social-link github" href="#"> </a></li>
+            <li class="socials__item"><a class="social-link in" href="#"> </a></li>
+          </ul>
+          <div class="hamburger"> 
+            <div class="full-screen"><a href="works.html">Мои работы</a><a href="blog.html">Блог</a><a href="about.html">Обо мне</a><a href="autoriztion.html">Авторизация</a></div>
+          </div>
+        </div>
         <div class="person welcom-person">
           <div class="person__avatar"><img class="avatar-little" src="../assets/images/avatar-little.jpg" alt=""/></div>
           <div class="person__name">Малаш Александр</div>
@@ -28,51 +32,49 @@
           <h2 class="title title-work">Мои работы</h2>
         </div>
         <div class="works-row">
-          <div class="works-col works-col_left">
+          <div class="works-col works-col_left"> <img class="works-col__pic" src="../assets/images/works.png" alt=""/></div>
+          <div class="works-col works-col_right">
             <h3 class="title works-desc__title">Сайт школы онлайн образования</h3>
             <div class="works-desc__tools">HTML, CSS, JAVASCRIPT</div><a class="works-desc__btn">Просмотреть сайт</a>
-          </div>
-          <div class="works-col works-col_right">
-            <div class="works-image"></div>
-            <div class="works-slider">
-              <div class="works-slider__left">   </div>
-              <div class="works-slider__right"></div>
-            </div>
           </div>
         </div>
       </div>
       <div class="works-feedback">
-        <div class="works-feedback__item">
-          <div class="works-feedback__foto"><img src="../assets/images/dima.jpg" alt=""/></div>
-          <div class="works-feedback__desc">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 3 месяца только самых тяжелых испытаний и бессонных ночей!</div>
-          <div class="works-feedback__name">Ковальчук Дмитрий<span class="works-feedback__name-job">-основатель Loftschool</span></div>
+        <div class="works-feedback__title title">Что обо мне говорят</div>
+        <div class="works-feedback__row">
+          <div class="works-feedback__item">
+            <div class="works-feedback__foto"><img src="../assets/images/dima.jpg" alt=""/></div>
+            <div class="works-feedback__desc">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 3 месяца только самых тяжелых испытаний и бессонных ночей!</div>
+            <div class="works-feedback__name">Ковальчук Дмитрий<span class="works-feedback__name-job">-основатель Loftschool</span></div>
+          </div>
+          <div class="works-feedback__item">
+            <div class="works-feedback__foto"><img src="../assets/images/vova.jpg" alt=""/></div>
+            <div class="works-feedback__desc">Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</div>
+            <div class="works-feedback__name">Сабанцев Владимир<span class="works-feedback__name-job">-преподаватель</span></div>
+          </div>
         </div>
-        <div class="works-feedback__item">
-          <div class="works-feedback__foto"><img src="../assets/images/vova.jpg" alt=""/></div>
-          <div class="works-feedback__desc">Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</div>
-          <div class="works-feedback__name">Сабанцев Владимир<span class="works-feedback__name-job">-преподаватель</span></div>
-        </div>
-        <div class="works-connect"> 
-          <h3 class="title works-connect__title">Связаться со мной
-            <input class="works-connect__name" type="text"/>
-            <input class="works-connect__email" type="text"/>
-            <input class="works-connect__textarea" type="text"/>
-          </h3>
-          <div class="works-connect__btns"><a class="btn-send">
-              <input type="text"/></a><a class="btn-reset">
-              <input type="text"/></a></div>
-        </div>
+        <form class="works-connect" action=""> 
+          <h3 class="title works-connect__title">Связаться со мной</h3>
+          <input class="works-connect__item works-connect__name" type="text" placeholder="Имя"/>
+          <input class="works-connect__item works-connect__email" type="email" placeholder="Email"/>
+          <textarea class="works-connect__textarea" name="textarea" cols="10" rows="10" placeholder="Введите ваше сообщение"> </textarea>
+          <div class="works-connect__btns">
+            <input class="btn-send" type="submit" value="Отправить"/>
+            <input class="btn-reset" type="reset" value="Очистить"/>
+          </div>
+        </form>
+        <div class="btn-top">   </div>
       </div>
     </div>
     <footer class="footer footer-works">
       <div class="footer-raw footer-top">
         <div class="footer-col">Этот сайт я сделал в рамках обучения в Школе образования Loftschool.</div>
         <div class="footer-col">
-          <div class="footer-links"><a class="footer-links__item my-works__link">Мои работы</a><a class="footer-links__item about__link">Обо мне</a><a class="footer-links__item blogs__link">Блог</a><a class="footer-links__item autorization__link">Авторизация</a></div>
+          <div class="footer-links"><a class="footer-links__item my-works__link" href="works.html">Мои работы</a><a class="footer-links__item about__link" href="about.html">Обо мне</a><a class="footer-links__item blogs__link" href="blog.html">Блог</a><a class="footer-links__item autorization__link" href="autorization.html">Авторизация</a></div>
           <ul class="socials footer-socials">
-            <li class="socials__item"><a class="social-link vk" href="#">вк</a></li>
-            <li class="socials__item"><a class="social-link github" href="#">гит</a></li>
-            <li class="socials__item"><a class="social-link in" href="#">инст</a></li>
+            <li class="socials__item"><a class="social-link vk" href="#"> </a></li>
+            <li class="socials__item"><a class="social-link github" href="#"> </a></li>
+            <li class="socials__item"><a class="social-link in" href="#"> </a></li>
           </ul>
         </div>
         <div class="footer-col"> 
