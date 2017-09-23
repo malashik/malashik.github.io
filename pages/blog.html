@@ -9,7 +9,26 @@
   </head>
   <body>
     <div class="blog">
-      <div class="blog-head">
+      <div class="section-head">
+        <div class="section-head__row">
+          <ul class="socials head-socials"> 
+            <li class="socials__item"><a class="social-link" href="#">
+                <svg class="svg-vk" width="30.011px" height="24px">
+                  <use xlink:href="../assets/images/icons/sprite.svg#vk"></use>
+                </svg></a></li>
+            <li class="socials__item"> <a class="social-link" href="#">
+                <svg class="svg-git" width="26px" height="23px">
+                  <use xlink:href="../assets/images/icons/sprite.svg#git"></use>
+                </svg></a></li>
+            <li class="socials__item"><a class="social-link" href="#">
+                <svg class="svg-in" width="24px" height="21.938px">
+                  <use xlink:href="../assets/images/icons/sprite.svg#in"></use>
+                </svg></a></li>
+          </ul>
+          <div class="hamburger"> 
+            <div class="full-screen"><a class="title title_fixed" href="works.html">Мои работы</a><a class="title title_fixed" href="blog.html">Блог</a><a class="title title_fixed" href="about.html">Обо мне</a><a class="title title_fixed" href="login.html">Авторизация</a></div>
+          </div>
+        </div>
         <div class="person blog-person">
           <div class="person__avatar"><img class="avatar-little" src="../assets/images/avatar-little.jpg" alt=""/></div>
           <h2 class="title blog__title">Блог</h2>
@@ -17,22 +36,24 @@
         </div>
       </div>
       <div class="blog-content"> 
-        <ul class="blog-nav">
-          <li class="blog-nav__item">Самое важное в SASS</li>
-          <li class="blog-nav__item">Секретные приемы верстки</li>
-          <li class="blog-nav__item">Моя сборка на Gulp</li>
-          <li class="blog-nav__item">Почему я выбрал Jade</li>
-        </ul>
-        <div class="blog-articles">   
-          <div class="article">
-            <h3 class="article__title title">Самое важное в SASS</h3>
-            <div class="article__date">03/10/12</div>
-            <div class="article__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate suscipit eligendi quae modi eum ea distinctio veniam cum minus non. Sit qui voluptatum, excepturi voluptate consequuntur cupiditate pariatur nisi praesentium corrupti velit tempore facilis necessitatibus iste est blanditiis doloribus quis. Magni facere, ratione suscipit temporibus dicta dolorem nihil eaque excepturi dolores sed provident nesciunt voluptatem voluptates placeat aliquid veritatis ut hic eius aperiam corporis dolore reprehenderit nobis quo nemo? Culpa illum saepe explicabo possimus, quas velit vel magni odio harum deleniti numquam sit accusantium voluptatibus molestias similique cumque repudiandae animi quaerat aspernatur officia libero, omnis necessitatibus eius! Nemo, facilis porro.</div>
-          </div>
-          <div class="article">
-            <h3 class="article__title title">Секретные приемы верстки</h3>
-            <div class="article__date">09/02/17</div>
-            <div class="article__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sit sint, provident modi eum eaque molestiae natus quos nam ratione dicta esse ex saepe recusandae voluptatum repudiandae similique, sapiente deserunt est id! Assumenda quis veritatis iusto ea vitae sunt vel repellendus ex debitis sed quidem nesciunt placeat illo dolores perspiciatis doloribus similique, impedit laboriosam exercitationem atque sequi accusamus, facere voluptate. Quidem dolorum, totam cumque sunt rerum quia et omnis sit fugit ipsam facere consectetur atque dolorem earum quaerat eos necessitatibus ut, accusamus temporibus soluta hic nostrum ex laudantium voluptas. Possimus, officia mollitia at rerum reprehenderit nulla quisquam architecto illum voluptate?</div>
+        <div class="blog-row">
+          <ul class="blog-nav">
+            <li class="blog-nav__item"><a class="blog-nav__link" href="#">Самое важное в SASS</a></li>
+            <li class="blog-nav__item"> <a class="blog-nav__link" href="#">Приёмы в вёрстке, без которых не обходится ни один сайт</a></li>
+            <li class="blog-nav__item"> <a class="blog-nav__link" href="#">Моя сборка на Gulp</a></li>
+            <li class="blog-nav__item"> <a class="blog-nav__link" href="#">Почему я выбрал Jade</a></li>
+          </ul>
+          <div class="blog-articles">   
+            <div class="article">
+              <h3 class="article__title">Самое важное в SASS</h3>
+              <div class="article__date">03/10/12</div>
+              <div class="article__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate suscipit eligendi quae modi eum ea distinctio veniam cum minus non. Sit qui voluptatum, excepturi voluptate consequuntur cupiditate pariatur nisi praesentium corrupti velit tempore facilis necessitatibus iste est blanditiis doloribus quis. Magni facere, ratione suscipit temporibus dicta dolorem nihil eaque excepturi dolores sed provident nesciunt voluptatem voluptates placeat aliquid veritatis ut hic eius aperiam corporis dolore reprehenderit nobis quo nemo? Culpa illum saepe explicabo possimus, quas velit vel magni odio harum deleniti numquam sit accusantium voluptatibus molestias similique cumque repudiandae animi quaerat aspernatur officia libero, omnis necessitatibus eius! Nemo, facilis porro.</div>
+            </div>
+            <div class="article">
+              <h3 class="article__title">Секретные приемы верстки</h3>
+              <div class="article__date">09/02/17</div>
+              <div class="article__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sit sint, provident modi eum eaque molestiae natus quos nam ratione dicta esse ex saepe recusandae voluptatum repudiandae similique, sapiente deserunt est id! Assumenda quis veritatis iusto ea vitae sunt vel repellendus ex debitis sed quidem nesciunt placeat illo dolores perspiciatis doloribus similique, impedit laboriosam exercitationem atque sequi accusamus, facere voluptate. Quidem dolorum, totam cumque sunt rerum quia et omnis sit fugit ipsam facere consectetur atque dolorem earum quaerat eos necessitatibus ut, accusamus temporibus soluta hic nostrum ex laudantium voluptas. Possimus, officia mollitia at rerum reprehenderit nulla quisquam architecto illum voluptate?</div>
+            </div>
           </div>
         </div>
       </div>
@@ -41,10 +62,19 @@
           <div class="footer-col">Этот сайт я сделал в рамках обучения в Школе образования Loftschool.</div>
           <div class="footer-col">
             <div class="footer-links"><a class="footer-links__item my-works__link" href="works.html">Мои работы</a><a class="footer-links__item about__link" href="about.html">Обо мне</a><a class="footer-links__item blogs__link" href="blog.html">Блог</a><a class="footer-links__item autorization__link" href="autorization.html">Авторизация</a></div>
-            <ul class="socials footer-socials">
-              <li class="socials__item"><a class="social-link vk" href="#"> </a></li>
-              <li class="socials__item"><a class="social-link github" href="#"></a></li>
-              <li class="socials__item"><a class="social-link in" href="#"></a></li>
+            <ul class="socials footer-socials"> 
+              <li class="socials__item"><a class="social-link" href="#">
+                  <svg class="svg-vk" width="30.011px" height="24px">
+                    <use xlink:href="../assets/images/icons/sprite.svg#vk"></use>
+                  </svg></a></li>
+              <li class="socials__item"> <a class="social-link" href="#">
+                  <svg class="svg-git" width="26px" height="23px">
+                    <use xlink:href="../assets/images/icons/sprite.svg#git"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a class="social-link" href="#">
+                  <svg class="svg-in" width="24px" height="21.938px">
+                    <use xlink:href="../assets/images/icons/sprite.svg#in"></use>
+                  </svg></a></li>
             </ul>
           </div>
           <div class="footer-col"> 

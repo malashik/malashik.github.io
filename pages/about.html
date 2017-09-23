@@ -11,13 +11,22 @@
     <div class="sections">
       <div class="section-head">
         <div class="section-head__row">
-          <ul class="socials head-socials">
-            <li class="socials__item"><a class="social-link vk" href="#"></a></li>
-            <li class="socials__item"><a class="social-link github" href="#"> </a></li>
-            <li class="socials__item"><a class="social-link in" href="#"> </a></li>
+          <ul class="socials head-socials"> 
+            <li class="socials__item"><a class="social-link" href="#">
+                <svg class="svg-vk" width="30.011px" height="24px">
+                  <use xlink:href="../assets/images/icons/sprite.svg#vk"></use>
+                </svg></a></li>
+            <li class="socials__item"> <a class="social-link" href="#">
+                <svg class="svg-git" width="26px" height="23px">
+                  <use xlink:href="../assets/images/icons/sprite.svg#git"></use>
+                </svg></a></li>
+            <li class="socials__item"><a class="social-link" href="#">
+                <svg class="svg-in" width="24px" height="21.938px">
+                  <use xlink:href="../assets/images/icons/sprite.svg#in"></use>
+                </svg></a></li>
           </ul>
           <div class="hamburger"> 
-            <div class="full-screen"><a href="works.html">Мои работы</a><a href="blog.html">Блог</a><a href="about.html">Обо мне</a><a href="autoriztion.html">Авторизация</a></div>
+            <div class="full-screen"><a class="title title_fixed" href="works.html">Мои работы</a><a class="title title_fixed" href="blog.html">Блог</a><a class="title title_fixed" href="about.html">Обо мне</a><a class="title title_fixed" href="login.html">Авторизация</a></div>
           </div>
         </div>
         <div class="person about-person">
@@ -28,9 +37,11 @@
         <div class="btn-down"></div>
       </div>
       <div class="section-about">
-        <div class="about-left"><img class="svg-lef" src="" alt=""/>
-          <h2 class="title about-left__title">Обо мне</h2>
-          <div class="about__content"><img class="about__content-bigAva" src="../assets/images/avatar-big.jpg" alt=""/>
+        <div class="about-left">
+          <div class="about-title__container">
+            <h2 class="title about-left__title">Обо мне</h2>
+          </div>
+          <div class="about-left__content"><img class="about__content-bigAva" src="../assets/images/avatar-big.jpg" alt=""/>
             <h3 class="title about-left__desc">Кто я</h3>
             <div class="about__content-desc">
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo perferendis odit corporis. Minus sequi repellendus facere magnam consectetur ratione sed! Quibusdam, aliquam nam. Suscipit voluptas eos consectetur. Temporibus, consequatur ab?</p>
@@ -38,16 +49,79 @@
             </div>
           </div>
         </div>
-        <div class="about-right"><img class="svg-right"/>
+        <div class="about-right">
           <h3 class="title about-right__title">Чем я могу быть вам полезен</h3>
           <div class="about-right__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta amet dolore placeat quia provident rem. Assumenda fugiat quaerat, optio odio facere voluptas aliquid mollitia ipsa perspiciatis, harum corporis tenetur alias!</div>
           <div class="about-skils">
             <div class="about-skils__title">Frontand</div>
-            <div class="about-skils__imgs"> <img src="#" alt="#"/><img src="#" alt="#"/><img src="#" alt="#"/></div>
+            <div class="about-skils__row">
+              <div class="about-skils__item">
+                <svg class="circle-svg">
+                  <circle class="circle-first" r="45" cx="50%" cy="50%"></circle>
+                  <circle class="circle-second_html5" r="45" cx="50%" cy="50%"></circle>
+                </svg><span class="circle-title">HTML5 </span>
+              </div>
+              <div class="about-skils__item">
+                <svg class="circle-svg">
+                  <circle class="circle-first" r="45" cx="50%" cy="50%"></circle>
+                  <circle class="circle-second_css3" r="45" cx="50%" cy="50%"></circle>
+                </svg><span class="circle-title">CSS3 </span>
+              </div>
+              <div class="about-skils__item">
+                <svg class="circle-svg">
+                  <circle class="circle-first" r="45" cx="50%" cy="50%"></circle>
+                  <circle class="circle-second_javascript" r="45" cx="50%" cy="50%"></circle>
+                </svg><span class="circle-title">JavaScript &amp; jQuery   </span>
+              </div>
+            </div>
             <div class="about-skils__title">Backend</div>
-            <div class="about-skils__imgs"><img src="#" alt="#"/><img src="#" alt="#"/><img src="#" alt="#"/></div>
+            <div class="about-skils__row">
+              <div class="about-skils__item">
+                <svg class="circle-svg">
+                  <circle class="circle-first" r="45" cx="50%" cy="50%"></circle>
+                  <circle class="circle-second_php" r="45" cx="50%" cy="50%"></circle>
+                </svg><span class="circle-title">PHP</span>
+              </div>
+              <div class="about-skils__item">
+                <svg class="circle-svg">
+                  <circle class="circle-first" r="45" cx="50%" cy="50%"></circle>
+                  <circle class="circle-second_mysql" r="45" cx="50%" cy="50%"></circle>
+                </svg><span class="circle-title">mySQL </span>
+              </div>
+              <div class="about-skils__item">
+                <svg class="circle-svg">
+                  <circle class="circle-first" r="45" cx="50%" cy="50%"></circle>
+                  <circle class="circle-second_nodejs" r="45" cx="50%" cy="50%"></circle>
+                </svg><span class="circle-title">Node.js &amp; npm   </span>
+              </div>
+              <div class="about-skils__item">
+                <svg class="circle-svg">
+                  <circle class="circle-first" r="45" cx="50%" cy="50%"></circle>
+                  <circle class="circle-second_mongodb" r="45" cx="50%" cy="50%"></circle>
+                </svg><span class="circle-title">Mongo.db   </span>
+              </div>
+            </div>
             <div class="about-skils__title">WorkFlow</div>
-            <div class="about-skils__imgs"><img src="#" alt="#"/><img src="#" alt="#"/><img src="#" alt="#"/></div>
+            <div class="about-skils__row">
+              <div class="about-skils__item">
+                <svg class="circle-svg">
+                  <circle class="circle-first" r="45" cx="50%" cy="50%"></circle>
+                  <circle class="circle-second_git" r="45" cx="50%" cy="50%"></circle>
+                </svg><span class="circle-title">Git </span>
+              </div>
+              <div class="about-skils__item">
+                <svg class="circle-svg">
+                  <circle class="circle-first" r="45" cx="50%" cy="50%"></circle>
+                  <circle class="circle-second_gulp" r="45" cx="50%" cy="50%"></circle>
+                </svg><span class="circle-title">Gulp   </span>
+              </div>
+              <div class="about-skils__item">
+                <svg class="circle-svg">
+                  <circle class="circle-first" r="45" cx="50%" cy="50%"></circle>
+                  <circle class="circle-second_bower" r="45" cx="50%" cy="50%"></circle>
+                </svg><span class="circle-title">Bower</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -81,10 +155,19 @@
         <div class="footer-col">Этот сайт я сделал в рамках обучения в Школе образования Loftschool.</div>
         <div class="footer-col">
           <div class="footer-links"><a class="footer-links__item my-works__link" href="works.html">Мои работы</a><a class="footer-links__item about__link" href="about.html">Обо мне</a><a class="footer-links__item blogs__link" href="blog.html">Блог</a><a class="footer-links__item autorization__link" href="autorization.html">Авторизация</a></div>
-          <ul class="socials footer-socials">
-            <li class="socials__item"><a class="social-link vk" href="#"> </a></li>
-            <li class="socials__item"><a class="social-link github" href="#"> </a></li>
-            <li class="socials__item"><a class="social-link in" href="#"> </a></li>
+          <ul class="socials footer-socials"> 
+            <li class="socials__item"><a class="social-link" href="#">
+                <svg class="svg-vk" width="30.011px" height="24px">
+                  <use xlink:href="../assets/images/icons/sprite.svg#vk"></use>
+                </svg></a></li>
+            <li class="socials__item"> <a class="social-link" href="#">
+                <svg class="svg-git" width="26px" height="23px">
+                  <use xlink:href="../assets/images/icons/sprite.svg#git"></use>
+                </svg></a></li>
+            <li class="socials__item"><a class="social-link" href="#">
+                <svg class="svg-in" width="24px" height="21.938px">
+                  <use xlink:href="../assets/images/icons/sprite.svg#in"></use>
+                </svg></a></li>
           </ul>
         </div>
         <div class="footer-col"> 
