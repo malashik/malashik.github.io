@@ -25,30 +25,66 @@
                   <use xlink:href="../assets/images/icons/sprite.svg#in"></use>
                 </svg></a></li>
           </ul>
-          <div class="hamburger"> 
-            <div class="full-screen"><a class="title title_fixed" href="works.html">Мои работы</a><a class="title title_fixed" href="blog.html">Блог</a><a class="title title_fixed" href="about.html">Обо мне</a><a class="title title_fixed" href="login.html">Авторизация</a></div>
+          <div class="hamburger">
+            <svg class="hamburger__top" width="40px" height="5px">
+              <use xlink:href="../assets/images/icons/hamburger_parts.svg#top"></use>
+            </svg>
+            <svg class="hamburger__middle" width="40px" height="5px">
+              <use xlink:href="../assets/images/icons/hamburger_parts.svg#middle"></use>
+            </svg>
+            <svg class="hamburger__bottom" width="40px" height="5px">
+              <use xlink:href="../assets/images/icons/hamburger_parts.svg#bottom"></use>
+            </svg>
+            <div class="full-screen"><a class="title title_fixed" href="works.html">Мои работы</a><a class="title title_fixed" href="blog.html">Блог</a><a class="title title_fixed" href="about.html">Обо мне</a><a class="title title_fixed" href="index.html">Авторизация</a></div>
           </div>
         </div>
-        <div class="person welcom-person">
+        <div class="person works-person">
           <div class="person__avatar"><img class="avatar-little" src="../assets/images/avatar-little.jpg" alt=""/></div>
           <div class="person__name">Малаш Александр</div>
           <div class="person__info">Личный сайт разработчика</div>
         </div>
         <div class="btn-down">
-          <svg width="25.18px" height="16.164px">
-            <use xlink:href="../assets/images/icons/arrow_down.svg"></use>
+          <svg width="26px" height="17px">
+            <use xlink:href="../assets/images/icons/arrow_down.svg#down"></use>
           </svg>
         </div>
       </div>
       <div class="works">
+        <svg class="svg-both" width="100%" height="100.8px" viewBox="0 -1 800 40" preserveAspectRatio="none">
+          <polygon points="0,0 0,40 800,40 800,0 400,40"></polygon>
+        </svg>
         <div class="title-work__container">
           <h2 class="title title-work">Мои работы</h2>
         </div>
         <div class="works-row">
-          <div class="works-col works-col_left"> <img class="works-col__pic" src="../assets/images/works.png" alt=""/></div>
+          <div class="btn-prev">
+            <svg class="arrow-top" width="26px" height="17px">
+              <use xlink:href="../assets/images/icons/arrow_down.svg#down"></use>
+            </svg>
+          </div>
+          <div class="btn-next">
+            <svg class="arrow-top" width="26px" height="17px">
+              <use xlink:href="../assets/images/icons/arrow_down.svg#down"></use>
+            </svg>
+          </div>
+          <ul class="works-slide__nav">
+            <li class="works-row__circle works-row__circle_active"></li>
+            <li class="works-row__circle"></li>
+            <li class="works-row__circle"></li>
+          </ul>
+          <div class="works-col works-col_left">
+            <div class="works__slider">
+              <div class="works__slides">
+                <div class="works__slides-item works__slides-item_active"><img class="works-col__pic" src="../assets/images/works.png" alt=""/></div>
+                <div class="works__slides-item" style="background:red;"><img class="works-col__pic" src="../assets/images/works.png" alt=""/></div>
+                <div class="works__slides-item" style="background:green;"><img class="works-col__pic" src="../assets/images/works.png" alt=""/></div>
+              </div>
+            </div>
+          </div>
           <div class="works-col works-col_right">
             <h3 class="title works-desc__title">Сайт школы онлайн образования</h3>
-            <div class="works-desc__tools">HTML, CSS, JAVASCRIPT</div><a class="works-desc__btn">Просмотреть сайт</a>
+            <div class="works-desc__tools">HTML, CSS, JAVASCRIPT</div><a class="works-desc__btn">
+              <div class="works-desc__btn-icon"></div><span>Просмотреть сайт</span></a>
           </div>
         </div>
       </div>
@@ -78,30 +114,36 @@
             <input class="btn-reset" type="reset" value="Очистить"/>
           </div>
         </form>
-        <div class="btn-top">   </div>
+        <div class="btn-top">
+          <svg class="arrow-top" width="26px" height="17px">
+            <use xlink:href="../assets/images/icons/arrow_down.svg#down"></use>
+          </svg>
+        </div>
       </div>
     </div>
-    <footer class="footer footer-works">
+    <footer class="footer footer-map">
       <div class="footer-raw footer-top">
-        <div class="footer-col">Этот сайт я сделал в рамках обучения в Школе образования Loftschool.</div>
-        <div class="footer-col">
-          <div class="footer-links"><a class="footer-links__item my-works__link" href="works.html">Мои работы</a><a class="footer-links__item about__link" href="about.html">Обо мне</a><a class="footer-links__item blogs__link" href="blog.html">Блог</a><a class="footer-links__item autorization__link" href="autorization.html">Авторизация</a></div>
-          <ul class="socials footer-socials"> 
-            <li class="socials__item"><a class="social-link" href="#">
-                <svg class="svg-vk" width="30.011px" height="24px">
-                  <use xlink:href="../assets/images/icons/sprite.svg#vk"></use>
-                </svg></a></li>
-            <li class="socials__item"> <a class="social-link" href="#">
-                <svg class="svg-git" width="26px" height="23px">
-                  <use xlink:href="../assets/images/icons/sprite.svg#git"></use>
-                </svg></a></li>
-            <li class="socials__item"><a class="social-link" href="#">
-                <svg class="svg-in" width="24px" height="21.938px">
-                  <use xlink:href="../assets/images/icons/sprite.svg#in"></use>
-                </svg></a></li>
-          </ul>
+        <div class="footer-raw__col">
+          <div class="footer-col">Этот сайт я сделал в рамках обучения в Школе образования Loftschool.</div>
+          <div class="footer-col">
+            <div class="footer-links"><a class="footer-links__item my-works__link" href="works.html">Мои работы</a><a class="footer-links__item about__link" href="about.html">Обо мне</a><a class="footer-links__item blogs__link" href="blog.html">Блог</a><a class="footer-links__item autorization__link" href="welcome.html">Авторизация</a></div>
+            <ul class="socials footer-socials">
+              <li class="socials__item"><a class="social-link" href="#">
+                  <svg class="svg-vk" width="30.011px" height="24px">
+                    <use xlink:href="../assets/images/icons/sprite.svg#vk"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a class="social-link" href="#">
+                  <svg class="svg-git" width="26px" height="23px">
+                    <use xlink:href="../assets/images/icons/sprite.svg#git"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a class="social-link" href="#">
+                  <svg class="svg-in" width="24px" height="21.938px">
+                    <use xlink:href="../assets/images/icons/sprite.svg#in"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-col"> 
+        <div class="footer-col__last">
           <div class="footer-col__quote">Всегда пишите код так, словно сопровождать его будет склонный к насилию психопат, который знает, где вы живете.</div>
           <div class="footer-col__quote-name">&ndash; Мартин Голдинг</div>
         </div>
@@ -110,5 +152,7 @@
         <div class="note">&copy; Малаш Александр | создано с любовью в loftschool | 2017</div>
       </div>
     </footer>
+    <script src="../assets/js/jquery-3.2.1.min.js"></script>
+    <script src="../assets/js/main.js"></script>
   </body>
 </html>
