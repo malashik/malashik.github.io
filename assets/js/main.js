@@ -1,5 +1,9 @@
 'use strict'
 
+
+
+
+
 /////   anim 3d welcome-login
 $(document).ready(function(){
     $('.autorization').on('click', function() {
@@ -64,11 +68,12 @@ SlideArrow();
 const toHamburger = function(){
     const hamburger = document.querySelector(".hamburger");
     // const btnDown = document.getElementsByClassName('.btn-down');
-    
-    hamburger.addEventListener('click', function(){
-        hamburger.classList.toggle('hamburger_active');
-        $('.btn-down').toggleClass('btn-down_hidden');
-    })
+    if(hamburger){
+        hamburger.addEventListener('click', function(){
+            hamburger.classList.toggle('hamburger_active');
+            $('.btn-down').toggleClass('btn-down_hidden');
+        })
+    }
 }
 toHamburger();
 
@@ -76,15 +81,15 @@ toHamburger();
 //// slider
 const toSlider = function(){
     const slides = document.querySelectorAll('.works__slides-item');
+    const slidesText = document.querySelectorAll('.works__slides-add');
+    const nav = document.getElementsByClassName('works-slide__nav');
+    const navItems = document.getElementsByClassName('works-row__circle');
+    let current = 0;
 
     if(slides.length !== 0){
-        const nav = document.getElementsByClassName('works-slide__nav');
-        const navItems = document.getElementsByClassName('works-row__circle');
-        
-        let current = 0;
-        
         function goToSlide(n){
             slides[current].className = 'works__slides-item';
+            slidesText[current].className = 'works__slides-add';
             navItems[current].className = 'works-row__circle';
             current = current + n;
             if (current > 2){
@@ -94,6 +99,7 @@ const toSlider = function(){
                 current = 2
             }
             slides[current].className = 'works__slides-item works__slides-item_active';
+            slidesText[current].className = 'works__slides-add_active';
             navItems[current].className = 'works-row__circle works-row__circle_active';
         }
         $('.btn-next').on('click', function(){
