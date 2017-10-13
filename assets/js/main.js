@@ -84,7 +84,19 @@ const toSlider = function(){
     const slidesText = document.querySelectorAll('.works__slides-add');
     const nav = document.getElementsByClassName('works-slide__nav');
     const navItems = document.getElementsByClassName('works-row__circle');
+    // console.log(typeof navItems);
+    // let a = [1,1,2,3,'a'];
     let current = 0;
+    // let navItemsArr = [];
+    // for (let i=0;i < navItems.length; i++){
+    //     navItemsArr.push(navItems[i]);
+
+    // }
+    // console.log(typeof navItemsArr);
+    // console.log(typeof slides);
+    // console.log('navItemsArr=',navItemsArr);
+    // let active = $('.works__slides-item').filter('.works__slides-item_active');
+    // let indexActive = active.index();
     
     if(slides.length !== 0){
         function goToSlide(n){
@@ -128,7 +140,7 @@ const toSlider = function(){
         let setIntFun = function(){
             goToSlide(1);
         }
-        setInterval(setIntFun, 5000);
+        // setInterval(setIntFun, 5000);
     }
 }
 toSlider();
