@@ -140,7 +140,7 @@ const toSlider = function(){
         let setIntFun = function(){
             goToSlide(1);
         }
-        // setInterval(setIntFun, 5000);
+        setInterval(setIntFun, 5000);
     }
 }
 toSlider();
