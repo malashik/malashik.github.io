@@ -4,18 +4,17 @@
 
 
 
-/////   anim 3d welcome-login
+/////   Flip welcome-login
 $(document).ready(function(){
     $('.autorization').on('click', function() {
-        
-        if($('.welcom-wrapper').hasClass('animation')){
-                $('.welcom-wrapper').removeClass('animation');
-                $('.welcom-wrapper').addClass('anti-animation');
-        } else {
-                $('.welcom-wrapper').removeClass('anti-animation');
-                $('.welcom-wrapper').addClass('animation');
-        }
+        $('.autorization').hide();
+        $('.welcom-wrapper').removeClass('anti-animation').addClass('animation');
     })
+    
+    $('.go-back').on('click', function(){
+        $('.autorization').show();
+        $('.welcom-wrapper').removeClass('animation').addClass('anti-animation');
+    });
 })
 //////    anim blog-accordeon
 $(document).ready(function(){
@@ -84,21 +83,9 @@ const toSlider = function(){
     const slidesText = document.querySelectorAll('.works__slides-add');
     const nav = document.getElementsByClassName('works-slide__nav');
     const navItems = document.getElementsByClassName('works-row__circle');
-    // console.log(typeof navItems);
-    // let a = [1,1,2,3,'a'];
     let current = 0;
-    // let navItemsArr = [];
-    // for (let i=0;i < navItems.length; i++){
-    //     navItemsArr.push(navItems[i]);
-
-    // }
-    // console.log(typeof navItemsArr);
-    // console.log(typeof slides);
-    // console.log('navItemsArr=',navItemsArr);
-    // let active = $('.works__slides-item').filter('.works__slides-item_active');
-    // let indexActive = active.index();
     
-    if(slides.length !== 0){
+    if(slides.length > 1){
         function goToSlide(n){
             slides[current].className = 'works__slides-item';
             slidesText[current].className = 'works__slides-add';
@@ -116,11 +103,14 @@ const toSlider = function(){
         }
         $('.btn-next').on('click', function(){
             goToSlide(1);
+            clearInterval(timerId);
         })
         $('.btn-prev').on('click', function(){
             goToSlide(-1);
+            clearInterval(timerId);
         })
         $('.works-row__circle').on('click', function(){
+            clearInterval(timerId);
             let indexActive = $(this).index();
             slides[current].className = 'works__slides-item';
             slidesText[current].className = 'works__slides-add';
@@ -140,7 +130,7 @@ const toSlider = function(){
         let setIntFun = function(){
             goToSlide(1);
         }
-        setInterval(setIntFun, 5000);
+        let timerId = setInterval(setIntFun, 5000);
     }
 }
 toSlider();
