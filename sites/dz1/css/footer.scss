@@ -1,0 +1,62 @@
+.footer{
+	background: #414141;
+	height: 50px;
+	width: 100%;
+	bottom: 0;
+	margin: 0;
+	position: relative;
+	margin-top: -50px;
+}
+
+
+.footer__left{
+	float: left; 
+	width: 50%;
+	padding-top: 18px;
+}
+.copyright{
+	font-size: 14px;
+	font-weight: 300;
+	color: #969696;
+}
+
+
+
+.footer__right{
+	padding-top: 10px;
+	float: left;
+	width: 50%;
+}
+.social__list{
+	text-align: right;
+}
+.social__item{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 6px;
+}
+.social__link {
+	width: 31px;
+	height: 31px;
+	display: block;
+	background: no-repeat center center;
+}
+
+.fb{
+	background-image: url(../img/icons/FaceBook.png);
+}
+.vk{
+	background-image: url(../img/icons/vk.png);
+}
+.tw{
+	background-image: url(../img/icons/Twitter.png);
+}
+.fb:hover{
+	background-image: url(../img/icons/FaceBook-hover.png);
+}
+.vk:hover{
+	background-image: url(../img/icons/vk-hover.png);
+}
+.tw:hover{
+	background-image: url(../img/icons/Twitter-hover.png);
+}

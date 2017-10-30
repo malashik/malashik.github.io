@@ -1,0 +1,288 @@
+@media screen and (max-width: 992px) {
+    .container {
+    	width: 750px;
+   	}
+    .sidebar{
+    	width: 100%;
+    	margin-bottom: 20px;
+    	
+    	float: none;
+    }
+    .nav__item{
+    	width: 185px;
+    	float: left;
+    }
+    
+    .nav__link-icon{
+		margin: 0;
+		padding: 0;
+    }
+    .nav__link{
+		display: block;
+		padding: 10px 25px 10px 0;
+		text-align: center;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		border: none;
+	}
+	
+	.nav__link-text{
+		margin-left:0;
+	}
+	.content__left{
+     	width: 35.7%;
+    }
+     .content__right{
+		width: 64.3%;
+    }
+    .big-pic{
+    	width: 170px;
+    	height: 170px;
+    }
+    .content__title{
+    	margin: 0;
+    }
+    
+	/* стили для career*/
+	/* стили для career*/
+
+	.wrapper{
+		width: 750px;
+	}
+
+	.stuff{
+    	width: 100%;
+    	margin-left: 0;
+    }	
+    .career,
+    .portfolio{
+    	width: 100%;
+    	margin-top: 20px;
+    }
+
+    .career__left{
+    	width: 31%;
+    	
+    }
+
+    .career__right{
+    	width: 69%;
+	}
+	.career__block{
+		width: 356px;
+	}
+    
+
+    /* стили для portfolio*/
+    /* стили для portfolio*/
+
+    .portfolio__item {
+    width: 230px;
+    }
+    .portfolio__img {
+    width: 100%;
+    }
+    
+}    
+
+
+
+@media screen and (max-width: 768px){
+	.container {
+    	width: 480px;
+   	}
+   /*	.header__right{
+   		height: 100%;
+   		background-position: right;
+   		background-repeat: no-repeat;
+   		background-image: url(../img/icons/header-icon.png);
+   		top: 0;
+   	}*/
+    .header__right-contacts{
+        width: 35px;
+        height: 35px;
+        border: none;
+        background: url(../img/icons/header-icon.png) no-repeat;
+    }
+   	.header__right-title{
+   		display: none;
+   	}
+        .vipadashka__wrap {
+        padding-top: 45px;
+        
+        
+        float: right;
+        position: absolute;
+    }
+    .vipadashka{
+        width: 150px;
+        float: right; 
+    }
+    .sidebar{
+    	width: 100%;
+    	margin-bottom: 20px;
+    	float: none;
+    }
+      .nav__item{
+    	width: 33%;
+    	float: left;
+    }
+    
+    .nav__link{
+    	padding: 0;
+    }
+    .nav__link-icon{
+        display: none;
+    }
+    
+    
+	.content{
+		float: none;
+	}
+
+	 .content__left{
+     	width: 100%;
+     	margin-bottom: 20px;
+     	padding: 0;
+    }
+    .content__pic{
+    	float: none;
+    }
+     .content__right{
+		width: 100%;
+    }
+    .content__title{
+    	margin: 0 auto;
+    	text-align: center;
+    }
+    .content__desc{
+    	width: 100%;
+    }
+    .content__download {
+    	text-align: center;
+	}
+    .footer{
+    	height: 100px;
+    	margin-bottom: -150px;
+    }
+    .footer__left,
+    .footer__right{
+    	float: none;
+    	margin: 0 auto;
+    	width: 100%;
+    	text-align: center;
+    }
+    .social__list{
+    	text-align: center;
+    }
+
+    /* стили для career*/
+    /* стили для career*/
+    .career__left {
+        float: none;
+        width: 230px;
+        margin: 30px auto 20px;
+    }
+    
+  
+    .career__right{
+    	width: 100%;
+    	float: none;
+    }	
+	.career__block{
+		width: 100%;
+	}
+    .career__item {
+    padding-left: 0px;
+}
+
+    .career__block:after,
+    .career__block:before{
+		display: none;
+    }
+    .career__year{
+    	display: none;
+    }
+
+
+	/* стили для portfolio*/
+    /* стили для portfolio*/
+
+    .portfolio__list {
+    	width: 100%;
+        margin-left: 0;
+    }
+    .portfolio__item{
+    	width: 220px;
+        margin-left: 0;
+    	margin-right: 20px;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width: 480px){
+	body{
+		font-size: 14px;
+	}
+    
+
+	.container {
+    	max-width: 95%;
+   	}
+    .vipadashka{
+        width: 120px;
+        height: 120px;
+    }
+
+   	
+ /*  	.header__right-contacts{
+   		display: none;
+   		
+   	}*/
+   	
+    .sidebar{
+    	width: 100%;
+    }
+	.stuff{
+    	width: 100%;
+    }
+    .nav__link-icon{
+        display: none;
+    }
+    .content__left,
+    .content__right{
+    	width: 100%;
+    }
+    .big-pic{
+    	max-width: 140px;
+    	max-height: 140px;
+    }
+   
+
+    /* стили для career*/
+    /* стили для career*/
+
+    .career__left{
+        width: 220px;
+        margin: 30px auto 20px;
+    }
+	
+	/* стили для portfolio*/
+    /* стили для portfolio*/
+    .portfolio{
+        width: 95%;
+        margin: 20px auto;
+    }
+    .portfolio__item{
+    	width: 100%;
+        margin-right: 0;
+    	
+    }
+
+
+
+}

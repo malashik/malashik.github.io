@@ -1,0 +1,152 @@
+.stuff{
+	width: 700px;
+	float: left;
+	margin-left: 20px;	
+}
+
+
+ .img{
+ 	border-radius: 110px;
+ 	border: 2px solid #d3d3d3;
+ 	display: block;
+ }
+
+.career__left{
+	width: 220px;
+	float: left;
+}
+
+.career__right{
+	width: 455px;
+	float: right;
+}
+
+.career-pic{
+	overflow: hidden;
+	border-radius: 9px;
+}
+
+.career-pic_elem{
+	display: block;
+	max-width: 100%;
+}
+
+
+
+.career__list{
+	text-align: right;
+	
+}
+
+.career__item{
+	padding-left: 70px;
+}
+
+.career__block{
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  width: 380px;
+  box-sizing: border-box;
+  padding: 20px;
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.career__block:after, .career__block:before{
+	content: "";
+	display: block;
+	width: 1px;
+	background: #ddd;
+	position: absolute;
+	right: 100%;
+	margin-right: 20px;
+}
+
+.career__block:before{
+	top: 0;
+	bottom: 50%;
+}
+.career__block:after{
+	top: 50%;
+	bottom: -25px;
+}
+
+.career__item:first-child .career__block:before,
+.career__item:last-child .career__block:after{
+	display: none;
+}
+
+.career__item:hover .career__block{
+	background: #33c1e3;
+
+}
+
+.career__item:hover .career__title {
+	color:#fff;
+}
+
+.career__item:hover .career__oc,
+.career__time{
+	color:#fff;
+} 
+
+.career__item:hover .career__time{
+	color:#fff;
+} 
+.career__item:hover .career__year{
+	font-weight: 600;
+	color: #33c1e3;
+}
+
+.career__item:hover .career__year:after{
+	border-color: #94e0f2;
+}
+
+.career__title{
+	font-size:21px;
+	color: #5a5a5a;
+	margin-bottom: 10px;
+}
+  
+.career__oc,
+.career__time{
+	font-size: 18px;
+	font-weight: 300;
+	color: #727272;
+	margin-bottom: 10px;
+}
+
+.career__time{
+	margin-bottom: 0;
+} 
+.career__year{
+	position: absolute;
+	top: 50%;
+	margin-top: -14px;
+	right: 100%;
+	margin-right: 35px;
+	font-size: 14px;
+	color: #727272;
+	line-height: 28px;
+	z-index: 10;
+
+}
+
+.career__year:after {
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	background: #33c1e3;
+	border-radius: 50%;
+	position: absolute;
+	right: -25px;
+	top: 50%;
+	margin-top: -10px;
+	border:5px solid #f6f6f6;
+
+}
+

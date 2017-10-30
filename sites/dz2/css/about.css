@@ -1,0 +1,81 @@
+.stuff {
+  width: 700px;
+  float: left;
+  padding-top: 25px; }
+
+.img {
+  border-radius: 110px;
+  border: 2px solid #d3d3d3;
+  display: block; }
+
+.content {
+  float: right;
+  width: 100%; }
+
+.content__left {
+  width: 320px;
+  padding-left: 35px;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center; }
+
+.content__right {
+  width: 380px;
+  height: 50%;
+  display: block; }
+
+.content__right,
+.content__left {
+  float: left; }
+
+.content__pic {
+  display: block;
+  float: left;
+  border-radius: 110px;
+  border: 4px solid #ffffff;
+  overflow: hidden;
+  display: inline-block;
+  /*img{
+		    width: 250px;
+	}*/ }
+
+.content__title {
+  font-size: 35px;
+  color: #414141; }
+
+.content__desc {
+  max-height: 350px;
+  overflow: auto;
+  margin-bottom: 40px; }
+
+.content__download {
+  text-align: right;
+  margin-bottom: 70px; }
+
+.btn {
+  padding: 7px 13px;
+  border: 2px solid #e85f61;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #e85f61;
+  text-decoration: none; }
+
+.btn__icon,
+.btn__text {
+  display: inline-block; }
+
+.btn__text {
+  margin-left: 8px; }
+
+.btn:hover {
+  background: #e85f61;
+  color: #fff; }
+
+.header__left_little-ava {
+  width: 100px;
+  height: 400px; }
+
+.vipadashka .vipadashka__item {
+  font-size: 10px; }
