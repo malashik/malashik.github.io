@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>webcom-media</title>
+    <link rel="stylesheet" href="./assets/styles/common/menu.min.css"/>
+  </head>
+  <body>
+    <ul class="fixed-nav" id="fixedMenu">
+      <li class="fixed-nav__circle active" data-menuanchor="P1"><a class="fixed-nav__link" href="#P1"></a></li>
+      <li class="fixed-nav__circle" data-menuanchor="P2"><a class="fixed-nav__link" href="#P2"></a></li>
+      <li class="fixed-nav__circle" data-menuanchor="P3"><a class="fixed-nav__link" href="#P3"></a></li>
+      <li class="fixed-nav__circle" data-menuanchor="P4"><a class="fixed-nav__link" href="#P4"></a></li>
+      <li class="fixed-nav__circle" data-menuanchor="P5"><a class="fixed-nav__link" href="#P5"></a></li>
+    </ul>
+    <div class="wrapper main" id="fullpage">
+      <div class="section" data-anchor="P1">
+        <div class="head">
+          <header class="header">
+            <div class="head__container">
+              <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160px" height="40px">
+<image  x="0px" y="0px" width="160px" height="40px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAAAoCAQAAADTJTkTAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfhCwQOOwIxXGffAAALAUlEQVRo3uXae3Dc1XUH8M/vt5JlG1uyZeQxNuIxqDyCa+xSDAGMAZtkcEinKaEU+kgKpQkNjVtSSFKSFJq0U5L80UmHZBpKCKEZmCRDJ8FMwS9kgx9gYowBYxthY2z5AXqsnquVVr/tH1qtf7vaXTmZAYo5Htt7zz333t/97rnnfs/5bbD9TN9zvoTS0q05/NZZ3VX/4mqTS/RHNrlzV0/6ruBjppeZI+tlt9taqOzxwZNJJXTB9maLKw0K9L09u7uxqbzFoUN7o7o5UeW1X7FQKq44XgAMLag0JJDVMnN1U99wOYv08JqTds3JCCqvfZY58eYHEb7SEjpcuTupR4/dZR1sT9SZHdAurLxOu473e6vvjoTWVTZok1Vlf6A0hNm3hAHtspWn2RwH8PjxP0JPlu8MpCWFEtqC3pIApqMjYUKoS6qyD8ZWeVfgm6rB1PcCsLxUq4HQBl3lbEJdBgQCqfBQSRc7EvWGocCQzkpRMO3pkvpJlnvCn4/RznWuCUXaWz3ur1WXWeFeO33nPQMvcJOv+LK/MyF0xHPlLdtz/2eD/Uqd0gOiYNSywiF+xetleu6wzLVFuju96EV/U6S93jVuUy4W16pX927jlqcRf2q+OlVmuzXEU6XNAynJ3MFMOBxmxiAURa3BCIEM9egrf4jXlEE35VdYqLZg2U+oUu0TBZazzMf/KMcGhnN/3xsIF1phvgUe0xRiTemlQ0mDuYOZ0B20jfn2k1FnGOZ2PaSjPIBPleuwEicVUKnTzAXnmxnTXqgOq999iI5RJujULSLEDrtK2WTzBxgy4f4xXtSaHQxGI1+ovZwLHLSl7INsksQVMc2lJtlln+kWxrRLsb84mymSzHuBXAqe8Se+7wF3WFeFIWt9pNgw1K875lOh1uCCqMDJsvvl8RPq06O2VJB6tsLFe8QWV7nS3QVQPeJEt1liRU6XsBgb9IEzzDVLjUGttsR47EyXazTNsDaveTm2yiwLNKrR7x1HbJdC6CJN6gRS9ns+T7NmOsUsM02W9qbn9DjZ6RrVG/SW53SkTPq5AZfK+rEnqsCTbiveWaDTUCxFTmgPu6PaGICp6J0wnkJndJSO4xWIEla6ygJztIJJFmGVBre5XJj7Ps5yttFA8E23x7Lyt93j+7nPV7s6Nu8Kn8/NeYc7NMR6zrdVo4cLUth9PucpfMMXzYjpW3SbG2ME+3zBEymTHvf4iGIEwM3anFi4r0h7ATEJpIKD2Xi0PxL1VVXF2qEOjcLi+2JgHKq+VmSKj/oFmOt0HbarM+BcTXaDRaoNWI+bfA0/s1aX6a6xzH1ey5Gkg/7XAT1q/I5rXeMnPi7jBt/Gaht0qFZvlsMC91nsoB/ZLWOOa13kp+Y67Hoz7PGMvfqc6jpN2Garffo1+rRT/cS58extBIF2m3wyvqtQr54iZhcEB5ydParcn6cwo2P69ZhWDOA2eyoC+KoWZ1qaA/AKbNKr1zYXWZQDcCm226PKcvynz+fG/kCzxW7JAbjaX+Vn/ZlfudLved7f4xE3Fqx5tmWGXe/Z/DwvOcOn/EAa/+4/cvqHNZvk6/lQ8qBn1Vvip6l8YWH0SBbdk4EOw0UAJhwOB/Mhbjg6GBTXwIq9FqxSWdKacz4GS/IjVudaTPVRrMGpzsGPYqMfx7mIKCjJPWkv5plmXtEImCdhf+xq67OB/KV1dAvPewNnxpxhF07nKCccBXCtofgKwyWgCPWEb+fdqyNKhsW0ZSRuFo1baTxZaTTKNbhQpDkP4KUmY4E5ufZs1QYLPLoVU4wl+SMUol6jGlmHinpPQlfBrZ1EQ26e+AZ6KciJ+hjNhkYgHA1iu71q/qhVQldJWjwcHMiePPrk2aGwONsKpXQ5MU5n3vLiuABu1KXOZV62UJ2ddoCtDml0nk2uxCEvGCnIJTwkldtk5DRGctIxMuKTkzA8hl+NHZEpAqrwyzgqQbydigE4bM1RAGkXlShSh1qDbBSEyB4omftmtRfeRuty1KOSHPKCJZa6zxI0585Cj2ddZ3EOwI26c9YJywpGD2mmDIfPltWXknEqcsYZlI+CgYyOkvAkdIRdEfQNF1KYo9MlpeNjK1OYUVmFC9S5VDxmrsQiDc4zGgiySLvKPPPzf+b5DCUeN0TGEIIxvWMBDPyWqeBRHvK8w2aNgtBf8usIpMPW4Wk4nO1PVJe0GNBl5uiz9HnmmJ5irchJbnSOXpvy2vUy5rtBrcEcFUqi2hv2lpylEJYp6NRp9CDHpRfVBbDWcAxnpYQcxanLhtGP5SsrgQOBrOx+2bLVq7ajH1+w/5ieYrs9Ql82xZZYwG+x3Wz/gFe0gH2SQpeU2cfEWHu62XjTAW2MeW2xF7OcENOcgjcZ781EJQBzxy0wWKG2l3AkGMxG2UNBouyEXfkYfww38IikrcOpCssFkbVoxNM5l37bWvyTK3L1m4S6XI7RjstcmBs5wZfUa/OiQU/hK37fRIQmm+0Ev9ap3vL8ZbLU5cYnXOMC2CxtnOpyqDdsi5JRV1jOIjA4WgTL/gbVk1Go1xRoVxX9z9cd0mStnV72il1aPKUKD+s302bbrLLGDnfhmzpwt1ZNtthph51et9cN2tyLe+z0jHVetcoUK60ycpTj6dV47YLGG7a7QEENZqxEwcFsjUw4oYJN20gwfcNLxwzg05o12G1bgXaTleY4YGNes8Nlvuhyjc40rE+nFlUyfu1Kyy10lvPQab37/TdocbnbLTJHg7Ru23XgXr0+q8nJAgN2etI/y+BVWUdiT7DDhAIW+ZrJDsYfMdgeb/1r8NVB28aS4ZgMaxhKZA9PSJS1yArNN1n0QCy1iknZ0kx1IZmvoA1NVy2S1ldAhyeqVY1+nWNGTJOQkTIQ09abgGHJ/BoJoUzsCkgIDcdKTMXtQne0Ivxqt7Ty4JDQXiWoZBHISDqBX/rNZOiYtVGZYzJQAE/hiNhbwYtHXXrsq9Zi0j1euwjAzR7L/FFUEUDHcFNlZVhXjgNOfV9fa16c+3djQVssShTq2Zj7vLHkfIVHWFjf/8hLHxuqAGFkYkuQTp0bVrBI+N1NU/84OlDO4v0C8OJxLTaOYzkWxGIAqUr+5Z4bUzNKTxCofrP2zrC/57sDZ5fjihO7TvlFww+lyv9a5v0BMAdKnTlejwWGejO1lH0dMNcR71SadSyAkvYU/g6oEEC1Qj0GypLtiU7RgP9fAOZ96hvusdz38h0rXeliz5cZ1uouofP9bbnt/FYJ9AdNLo4fyQZ8Nh+j5loqob7s0GGREzWWn7vKcS0lYtkMG53mEuvBTbZqyL3KOdvJer0oDc4zw4AaE/yXx0RONsdkfXbo/dAAWPIqqLdFi1usxySf9jX/aAru8ymvmybrGkkrnKFDaIakz1lmkW9ZaMg0kRts/pAAWFJq9XvUCtMkfVy1x9ytSpNbXWiL0GtudthHLHBEwhtqJFTjZsMIrfcl130oACxDRU6QtVmfP/Rjt/ilXkMmOkfSsPNkHdBklue0IiNCVoRGnzRd2oTCevZxC2BZzlcjhUf9hRUusRS9agVOyL96esjiojs37Qyb7fG60GxvxbuOUwDLwlelRi8e9Ge+a7cX0G+qjH7n59O0Jfna4ghXS7tQIlcs+2HhnfyhoDExqVErhZ1e9RkP5uA5yTa1lms021lCz1nsItOcol5CwkRt6iw2wyyNhb9RPC49sELKlrAn94OPf3PQz8FOVQ662Z2+IC3pDzzkEo/qE9hhqzqHNLvfA4akDbk/PuH/AdmpnaenpLlVAAAAAElFTkSuQmCC" />
+</svg>
+              </div>
+              <ul class="nav__list" id="headerMenu">
+                <li class="nav__item" data-menuanchor="P1"><a class="nav__item-link" href="#P1">главная</a></li>
+                <li class="nav__item" data-menuanchor="P2"><a class="nav__item-link" href="#P2">портфолио</a></li>
+                <li class="nav__item" data-menuanchor="P3"><a class="nav__item-link" href="#P3">преимущества</a></li>
+                <li class="nav__item" data-menuanchor="P4"><a class="nav__item-link" href="#P4">отзывы</a></li>
+                <li class="nav__item" data-menuanchor="P5"><a class="nav__item-link" href="#P5">контакты</a></li>
+              </ul>
+              <div class="header__phone"><a class="header__phone-link" href="tel:+375291234567" target="_blank">+375 (29) 123-45-67</a><a class="header__phone-link" href="tel:+375331234567" target="_blank">+375 (33) 123-45-67</a></div>
+              <div class="hamburger">
+                <svg class="hamburger__top" width="40px" height="5px">
+                  <use xlink:href="../assets/images/icons/hamburger_parts.svg#top"></use>
+                </svg>
+                <svg class="hamburger__middle" width="40px" height="5px">
+                  <use xlink:href="../assets/images/icons/hamburger_parts.svg#middle"></use>
+                </svg>
+                <svg class="hamburger__bottom" width="40px" height="5px">
+                  <use xlink:href="../assets/images/icons/hamburger_parts.svg#bottom"></use>
+                </svg>
+                <ul class="hamburger-nav" id="headerMenu">
+                  <li class="nav__item" data-menuanchor="P1"><a class="nav__item-link" href="#P1">главная</a></li>
+                  <li class="nav__item" data-menuanchor="P2"><a class="nav__item-link" href="#P2">портфолио</a></li>
+                  <li class="nav__item" data-menuanchor="P3"><a class="nav__item-link" href="#P3">преимущества</a></li>
+                  <li class="nav__item" data-menuanchor="P4"><a class="nav__item-link" href="#P4">отзывы</a></li>
+                  <li class="nav__item"><a class="nav__item-link" href="#">контакты</a></li>
+                </ul>
+              </div>
+            </div>
+          </header>
+          <div class="slider">
+            <div class="content head-content">
+              <div class="slider-item slider-item_active">
+                <h2 class="slider__title title">ГЛАВНЫЙ ЗАГОЛОВОк</h2>
+                <svg class="slider__line" height="10px">
+                  <use xlink:href="../assets/images/icons/sprite.svg#lineHead"></use>
+                </svg>
+                <div class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicingи elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua. </div>
+                <button class="slider__button btns">оформить заявку</button>
+              </div>
+              <div class="slider-item">
+                <h2 class="slider__title title">самый ГЛАВНЫЙ ЗАГОЛОВОк</h2>
+                <svg class="slider__line">
+                  <use xlink:href="../assets/images/icons/sprite.svg#lineHead"></use>
+                </svg>
+                <div class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicingи elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua. dolor sit amet consectetur adipisicing elit. Amet culpa nemo sapiente</div>
+                <button class="slider__button btns">оформить заявку</button>
+              </div>
+              <div class="slider-item">
+                <h2 class="slider__title title">Отец ГЛАВНЫх ЗАГОЛОВков</h2>
+                <svg class="slider__line">
+                  <use xlink:href="../assets/images/icons/sprite.svg#lineHead"></use>
+                </svg>
+                <div class="slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet culpa nemo sapiente assumenda distinctio blanditiis ratione at, quia soluta doloribus nihil vel libero tempore adipisci molestiae? Molestiae rerum tenetur illo. Lorem ipsum dolor sit amet, consectetu  aliqua. </div>
+                <button class="slider__button btns">оформить заявку</button>
+              </div>
+            </div>
+            <svg class="btn-prev btns" width="46px" height="80px">
+              <use xlink:href="../assets/images/icons/sprite.svg#left"></use>
+            </svg>
+            <svg class="btn-next btns" width="46px" height="80px">
+              <use xlink:href="../assets/images/icons/sprite.svg#right"></use>
+            </svg>
+            <ul class="head-nav btns">
+              <li class="head-nav__circle head-nav__circle_active"></li>
+              <li class="head-nav__circle"></li>
+              <li class="head-nav__circle"></li>
+            </ul>
+          </div>
+          <svg class="btn__down btns" width="55px" height="55px">
+            <use xlink:href="../assets/images/icons/sprite.svg#down"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="section" data-anchor="P2">
+        <div class="works">
+          <div class="content works-content">
+            <h2 class="works__title title">наша работа</h2>
+            <svg class="works__line line" width="30px" height="10px">
+              <use xlink:href="../assets/images/icons/sprite.svg#line"></use>
+            </svg>
+            <div class="works__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</div>
+          </div>
+          <div class="container">
+            <div class="works-container__wrap"><a class="works__article" href="#">
+                <div class="works__article-info">
+                  <h4 class="works__article-title title">название работы</h4>
+                  <svg class="works__article-line line" width="30px" height="10px">
+                    <use xlink:href="../assets/images/icons/sprite.svg#line"></use>
+                  </svg>
+                  <div class="works__article-text">описание работы</div>
+                </div></a><a class="works__article" href="#">
+                <div class="works__article-info">
+                  <h4 class="works__article-title title">название работы</h4>
+                  <svg class="works__article-line line" width="30px" height="10px">
+                    <use xlink:href="../assets/images/icons/sprite.svg#line"></use>
+                  </svg>
+                  <div class="works__article-text">описание работы</div>
+                </div></a><a class="works__article" href="#">
+                <div class="works__article-info">
+                  <h4 class="works__article-title title">название работы</h4>
+                  <svg class="works__article-line line" width="30px" height="10px">
+                    <use xlink:href="../assets/images/icons/sprite.svg#line"></use>
+                  </svg>
+                  <div class="works__article-text">описание работы</div>
+                </div></a><a class="works__article" href="#">
+                <div class="works__article-info">
+                  <h4 class="works__article-title title">название работы</h4>
+                  <svg class="works__article-line line" width="30px" height="10px">
+                    <use xlink:href="../assets/images/icons/sprite.svg#line"></use>
+                  </svg>
+                  <div class="works__article-text">описание работы</div>
+                </div></a><a class="works__article" href="#">
+                <div class="works__article-info">
+                  <h4 class="works__article-title title">название работы</h4>
+                  <svg class="works__article-line line" width="30px" height="10px">
+                    <use xlink:href="../assets/images/icons/sprite.svg#line"></use>
+                  </svg>
+                  <div class="works__article-text">описание работы</div>
+                </div></a><a class="works__article" href="#">
+                <div class="works__article-info">
+                  <h4 class="works__article-title title">название работы</h4>
+                  <svg class="works__article-line line" width="30px" height="10px">
+                    <use xlink:href="../assets/images/icons/sprite.svg#line"></use>
+                  </svg>
+                  <div class="works__article-text">описание работы</div>
+                </div></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="section" data-anchor="P3">
+        <div class="advantages">
+          <div class="content">
+            <div class="advantages__title title">Почему мы</div>
+            <svg class="advantages__line line" width="30px" height="10px">
+              <use xlink:href="../assets/images/icons/sprite.svg#line"></use>
+            </svg>
+            <div class="advantages__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</div>
+          </div>
+          <div class="container">
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <svg class="advantages__svg" width="50px" height="40px">
+                  <use xlink:href="../assets/images/icons/sprite.svg#adv1"></use>
+                </svg>
+                <h4 class="advantages__item-title title">Преимущество 1</h4>
+                <div class="advantages__item-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</div>
+              </li>
+              <li class="advantages__item">
+                <svg class="advantages__svg" width="50px" height="40px">
+                  <use xlink:href="../assets/images/icons/sprite.svg#adv2"></use>
+                </svg>
+                <h4 class="advantages__item-title title">Преимущество 2</h4>
+                <div class="advantages__item-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</div>
+              </li>
+              <li class="advantages__item">
+                <svg class="advantages__svg" width="50px" height="40px">
+                  <use xlink:href="../assets/images/icons/sprite.svg#adv3"></use>
+                </svg>
+                <h4 class="advantages__item-title title">Преимущество 3</h4>
+                <div class="advantages__item-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</div>
+              </li>
+              <li class="advantages__item">
+                <svg class="advantages__svg" width="50px" height="40px">
+                  <use xlink:href="../assets/images/icons/sprite.svg#adv4"></use>
+                </svg>
+                <h4 class="advantages__item-title title">Преимущество 4</h4>
+                <div class="advantages__item-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</div>
+              </li>
+              <li class="advantages__item">
+                <svg class="advantages__svg" width="50px" height="40px">
+                  <use xlink:href="../assets/images/icons/sprite.svg#adv5"></use>
+                </svg>
+                <h4 class="advantages__item-title title">Преимущество 5</h4>
+                <div class="advantages__item-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</div>
+              </li>
+              <li class="advantages__item">
+                <svg class="advantages__svg" width="50px" height="40px">
+                  <use xlink:href="../assets/images/icons/sprite.svg#adv6"></use>
+                </svg>
+                <h4 class="advantages__item-title title">Преимущество 6</h4>
+                <div class="advantages__item-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</div>
+              </li>
+              <li class="advantages__item">
+                <svg class="advantages__svg" width="50px" height="40px">
+                  <use xlink:href="../assets/images/icons/sprite.svg#adv7"></use>
+                </svg>
+                <h4 class="advantages__item-title title">Преимущество 7</h4>
+                <div class="advantages__item-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</div>
+              </li>
+              <li class="advantages__item">
+                <svg class="advantages__svg" width="50px" height="40px">
+                  <use xlink:href="../assets/images/icons/sprite.svg#adv8"></use>
+                </svg>
+                <h4 class="advantages__item-title title">Преимущество 8</h4>
+                <div class="advantages__item-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="section" data-anchor="P4">
+        <div class="feedback">
+          <div class="content">
+            <h2 class="feedback__title title">оставьте отзыв</h2>
+            <svg class="works__line line" width="30px" height="10px">
+              <use xlink:href="../assets/images/icons/sprite.svg#line"></use>
+            </svg>
+            <div class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</div>
+          </div>
+          <div class="feedback__container">
+            <div class="feedback__left">
+              <div class="feedback__left-info">наш адресс
+                <p>г.Минск, ул. Скрыганова, 6А, 4 этаж</p>
+              </div>
+              <div class="feedback__left-info">звоните
+                <p>+375 (29) 123-45-67,  +375 (33) 123-45-67</p>
+              </div>
+              <div class="feedback__left-info">пишите
+                <p>info@promo-webcom.by</p>
+              </div>
+            </div>
+            <div class="feedback__right">
+              <form class="form">
+                <label class="feedback__right-item">
+                  <h4 class="feedback__right-title">ВАШЕ ИМЯ</h4>
+                  <input class="input" type="text" placeholder="Иванов Иван" required="required"/>
+                </label>
+                <label class="feedback__right-item">
+                  <h4 class="feedback__right-title">E-MAIL</h4>
+                  <input class="input" type="email" placeholder="example@mysite.com" required="required"/>
+                </label>
+                <label class="feedback__right-item">
+                  <h4 class="feedback__right-title">ВАША ДОЛЖНОСТЬ</h4>
+                  <input class="input" type="text" placeholder="Должность" required="required"/>
+                </label>
+                <div class="feedback__right-item">
+                  <h4 class="feedback__right-title">ОТЗЫВ</h4>
+                  <textarea class="textarea" placeholder="Ваше сообщение" required="required"></textarea>
+                </div>
+                <div class="feedback__right-item">
+                  <svg class="add-photo btns" width="50px" height="60px">
+                    <use xlink:href="../assets/images/icons/sprite.svg#addPhoto"></use>
+                  </svg>
+                  <h4 class="feedback__right-title feedback-photo">ФОТО</h4>
+                </div>
+                <label class="feedback__right-item">
+                  <h4 class="feedback__right-title">ВВЕДИТЕ КОД С КАРТИНКИ</h4>
+                  <input class="input" type="password" required="required"/>
+                  <div class="feedback__right-item_psw">
+                    <div class="img-password"><img class="img-password" src="./assets/images/psw.jpg" alt=""/></div>
+                    <input class="input-btn btns" type="submit" value="Отправить" required="required"/>
+                  </div>
+                </label>
+              </form>
+            </div>
+          </div>
+          <svg class="arrow-top" width="60px" height="60px">
+            <use xlink:href="../assets/images/icons/sprite.svg#up"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="section" data-anchor="P5">
+        <div class="foot">
+          <div class="section-map" id="map"></div>
+          <footer class="footer">
+            <div class="footer-container">
+              <div class="footer__top">
+                <div class="footer__left footer-col">
+                  <div class="footer__left-logo logo"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160px" height="40px">                    <image  x="0px" y="0px" width="160px" height="40px"  xlink:href="data:img/png;base64,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" />                </svg></div>
+                  <svg class="footer__left-line line" width="30px" height="10px">
+                    <use xlink:href="../assets/images/icons/sprite.svg#line">               .footer__text г. Минск, ул. Скрыганова, 6А,4 этаж</use>
+                  </svg>
+                  <div class="footer__text">Дисклеймер компании</div>
+                </div>
+                <div class="footer__center footer-col">
+                  <h4 class="footer__center-title title">МЫ В СОЦСЕТЯХ</h4>
+                  <svg class="footer__center-line line" width="30px" height="10px">
+                    <use xlink:href="../assets/images/icons/sprite.svg#line">               .footer__text г. Минск, ул. Скрыганова, 6А,4 этаж</use>
+                  </svg>
+                  <div class="footer__center-socials">
+                    <ul class="socials__list">
+                      <li class="socials__items socials__items_inst">
+                        <svg width="27px" height="27px">
+                          <use xlink:href="../assets/images/icons/socials.svg#inst"></use>
+                        </svg>
+                      </li>
+                      <li class="socials__items socials__items_tw">
+                        <svg width="27px" height="27px">
+                          <use xlink:href="../assets/images/icons/socials.svg#tw"></use>
+                        </svg>
+                      </li>
+                      <li class="socials__items socials__items_fb">
+                        <svg width="27px" height="27px">
+                          <use xlink:href="../assets/images/icons/socials.svg#fb"></use>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer__right footer-col">
+                  <h4 class="footer__left-title title">АДРЕС</h4>
+                  <svg class="footer__right-line line" width="30px" height="10px">
+                    <use xlink:href="../assets/images/icons/sprite.svg#line"></use>
+                  </svg>
+                  <div class="footer__text">г. Минск, ул. Скрыганова, 6А,4 этаж</div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__copy">
+              <div class="footer__copy-text">Copyrights 2015 © Webcom Media</div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/jquery-3.2.1.min.js"></script>
+    <script src="./assets/js/fullpage/jquery.fullPage.min.js"></script>
+    <script src="./assets/js/owl-carousel/owl.carousel.min.js"></script>
+    <script src="../assets/js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYBpOUcTHdp-8cmj4sEbxFU6QmLqh64Aw&amp;callback=initMap" async="async" defer="defer"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
